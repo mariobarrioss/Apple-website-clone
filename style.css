@@ -181,35 +181,68 @@ table {
 
 .nav-header li {
   align-items: inherit;
+  border-right: 1px solid #5c5c5c;
+	border-left: 1px solid rgba(255,255,255,.2);
   flex: 1 1 auto;
   height: 36px;
   justify-content: center;
   width: 106px;
 }
 
+.nav-header li:first-child {
+  border-left: none;
+}
+
+.nav-header li:first-child:hover {
+  border-left: none;
+}
+
+.nav-header li:hover {
+	background: rgba(0,0,0,.3);
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-bottom: none;
+}
+
+.nav-header li:active {
+	background: rgba(0,0,0,.3);
+	box-shadow: inset 0px 3px 2px rgba(0,0,0,1);
+}
+
 .nav-header a {
   align-self: center;
-  border-right: 2px solid;
-  
-  border-image-source: linear-gradient(90deg, rgba(189,190,191,1) 0%, rgba(64,64,64,1) 94%);
-  border-image-width: 0 2px 0 0;
-  border-image-slice: 9;
+  align-items: center;
   display: flex;
+  flex-direction: row;
   height: 100%;
+  width: 100%;
   justify-content: center;
   margin: auto;
   text-decoration: none;
 }
 
+.nav-header li:hover {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+	box-shadow: inset 0 0 40px rgba(255,255,255,.2);
+	background: rgba(36,33,33, .6);
+}
+
 .nav-header span {
+  align-self: center;
+  justify-self: center;
+  align-items: center;
   color: #fff;
   font-size: 12px;
   display: flex;
+  height: 100%;
+  width: 100%
   margin: auto;
 }
+
 .nav-header .search-box {
   display: flex;
-  
   height: 36px;
   width: 132px;
   align-items: center;
@@ -218,8 +251,26 @@ table {
 
 .search-box input {
   align-self: center;
-  background: inherit;
-  border-radius: 12px;
+  background: #7e7e7e; 
+	background: -moz-linear-gradient(top,  #7e7e7e 0%, #797979 50%, #6e6e6e 52%, #767676 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7e7e7e), color-stop(50%,#797979), color-stop(52%,#6e6e6e), color-stop(100%,#767676)); 
+	background: -webkit-linear-gradient(top,  #7e7e7e 0%,#797979 50%,#6e6e6e 52%,#767676 100%);
+	background: -o-linear-gradient(top,  #7e7e7e 0%,#797979 50%,#6e6e6e 52%,#767676 100%); 
+	background: -ms-linear-gradient(top,  #7e7e7e 0%,#797979 50%,#6e6e6e 52%,#767676 100%); 
+	background: linear-gradient(to bottom,  #7e7e7e 0%,#797979 50%,#6e6e6e 52%,#767676 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', endColorstr='#767676',GradientType=0 ); /* IE6-9 */
+  border-radius: 50px;
+  border: none;
+  border-bottom: 1px solid #858585;
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,1);
   height: 19px;
   width: 106px;
+}
+
+.search-icon-container {
+  height: 14px;
+  width: 15px;
+  position: absolute;
+  top: 13px;
+  left: 18px;
 }
