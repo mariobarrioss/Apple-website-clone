@@ -367,3 +367,127 @@ table {
 .video-link:hover .large-vid-link {
   display: inline;
 }
+
+.promotions {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  z-index: 1;
+  top: 782px;
+}
+
+.promotions ul {
+  position: relative;
+  height: 200px;
+  width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.promotions ul li {
+  position: relative;
+  height: 200px;
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.promotions ul li a {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.promotions ul li + li a {
+  border-left: 2px solid #fff;
+}
+
+.promotions ul li a img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -182px;
+  border: 0;
+}
+
+.page-footer {
+  border: 1px solid red;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 90px;
+  padding: 0;
+  color: #6e6e6e;
+  font-size: 0.8334em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.wrapper {
+  border: 1px solid blue;
+  width: 980px;
+  margin: 0 auto;
+  padding: 1em 0 2.6em;
+  display: block;
+  color: #6e6e6e;
+  font-size: 0.8334em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.page-footer .left {
+  border: 1px solid sandybrown;
+  float: left;
+  clear: both;
+  text-align: left;
+  width: 49%;
+  padding-top: 1.5em;
+}
+
+.page-footer p {
+  display: inline;
+  margin: 0;
+}
+
+.footer-links {
+  color: #08c;
+}
+
+.page-footer .right {
+  border: 1px solid green;
+  width: 51%;
+  float: right;
+  padding-top: 1.5em;
+  text-align: right;
+}
+
+.page-footer ul {
+  display: inline;
+  margin: 0;
+}
+
+.page-footer .piped li.first-item {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+
