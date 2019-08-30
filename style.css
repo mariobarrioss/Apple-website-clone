@@ -332,15 +332,15 @@ table {
 
 .header {
   position: absolute;
-  top: 50%;
+  top: 28%;
   padding: 50px 0;
   text-align: center;
-  height: 235px;
+  height: 72%;
   width: 1440px;
 }
 
 .title {
-  height: 104px;
+  height: 95px;
   width: 1440px;
 }
 
@@ -353,6 +353,7 @@ table {
   display: block;
   height: 64px;
   width: 1440px;
+  margin-top: 27px;
 }
 
 .large-vid-link {
