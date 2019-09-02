@@ -105,8 +105,7 @@ section {
 body {
   background: #fff;
   color: #333;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana,
-    sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -117,7 +116,7 @@ body {
 
 ol,
 ul {
-  list-style: none;
+  list-style: none outside;
 }
 
 blockquote,
@@ -425,64 +424,83 @@ table {
 }
 
 .page-footer {
-  border: 1px solid red;
   display: block;
   position: absolute;
   z-index: 1;
+  top: 982px;
   right: 0;
   bottom: 0;
   left: 0;
   margin: 0;
   width: 100%;
+  min-width: 980px;
   height: 90px;
   padding: 0;
   color: #6e6e6e;
-  font-size: 0.8334em;
+  font-size: 10.0008px;
   line-height: 1.2;
   text-align: center;
 }
 
-.wrapper {
-  border: 1px solid blue;
+.page-footer .wrapper {
   width: 980px;
+  height: 90px;
   margin: 0 auto;
   padding: 1em 0 2.6em;
   display: block;
-  color: #6e6e6e;
-  font-size: 0.8334em;
-  line-height: 1.2;
-  text-align: center;
+}
+
+.page-footer .wrapper::after {
+  clear: both;
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0;
 }
 
 .page-footer .left {
-  border: 1px solid sandybrown;
   float: left;
   clear: both;
   text-align: left;
   width: 49%;
   padding-top: 1.5em;
+  height: 27px;
 }
 
-.page-footer p {
+.page-footer p,
+.page-footer ul,
+.page-footer ul li {
   display: inline;
   margin: 0;
+  font-weight: 200;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  color: #6e6e6e;
 }
 
 .footer-links {
   color: #08c;
+  font-size: 9.5px;
+  font-weight: 200;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
 .page-footer .right {
-  border: 1px solid green;
   width: 51%;
   float: right;
   padding-top: 1.5em;
   text-align: right;
+  height: 27px;
+  font-weight: 200;
+  padding-right: 6px;
+
 }
 
-.page-footer ul {
-  display: inline;
-  margin: 0;
+.page-footer .piped li {
+  display: inline-block;
+  float: none;
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  border-left: 1px solid #ccc;
 }
 
 .page-footer .piped li.first-item {
@@ -491,3 +509,30 @@ table {
   border-left: none;
 }
 
+.page-footer .piped a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-footer .piped .country-logo {
+  position: relative;
+  z-index: 1;
+  width: 16px;
+  height: 12px;
+  zoom: 1;
+
+}
+
+.page-footer .piped .country-logo img {
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: 7px;
+
+}
+
+.clear {
+  clear: both;
+}
