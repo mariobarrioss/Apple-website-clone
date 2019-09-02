@@ -82,12 +82,11 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -137,12 +136,6 @@ table {
   border-spacing: 0;
 }
 
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-
 *,
 *::before,
 *::after {
@@ -155,22 +148,16 @@ table {
   align-items: center;
   border-radius: 4px;
   background: #707070;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0, #787878),
-    color-stop(0.5, #5e5e5e),
-    color-stop(0.51, #707070),
-    color-stop(1, #838383)
-  );
-  background-image: -moz-linear-gradient(
-    center bottom,
-    #787878 0%,
-    #5e5e5e 50%,
-    #707070 51%,
-    #838383 100%
-  );
+  background-image:
+    -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #787878),
+      color-stop(0.5, #5e5e5e),
+      color-stop(0.51, #707070),
+      color-stop(1, #838383)
+    );
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
   display: flex;
   font-weight: 400;
@@ -201,14 +188,6 @@ table {
   width: 106px;
 }
 
-.nav-header li:first-child {
-  border-left: none;
-}
-
-.nav-header li:first-child:hover {
-  border-left: none;
-}
-
 .nav-header li:hover {
   background: rgba(0, 0, 0, 0.3);
   border-right: 1px solid transparent;
@@ -216,9 +195,17 @@ table {
   border-bottom: none;
 }
 
+.nav-header li:first-child {
+  border-left: none;
+}
+
 .nav-header li:active {
   background: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 1);
+  box-shadow: inset 0 3px 2px rgba(0, 0, 0, 1);
+}
+
+.nav-header li:first-child:hover {
+  border-left: none;
 }
 
 .nav-header a {
@@ -231,14 +218,6 @@ table {
   justify-content: center;
   margin: auto;
   text-decoration: none;
-}
-
-.nav-header li:hover {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.2);
-  background: rgba(36, 33, 33, 0.6);
 }
 
 .nav-header span {
@@ -263,33 +242,28 @@ table {
 .search-box input {
   align-self: center;
   background: #7e7e7e;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, #7e7e7e),
-    color-stop(50%, #797979),
-    color-stop(52%, #6e6e6e),
-    color-stop(100%, #767676)
-  );
-  background: -moz-linear-gradient(
-    top,
-    #7e7e7e 0%,
-    #797979 50%,
-    #6e6e6e 52%,
-    #767676 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    #7e7e7e 0%,
-    #797979 50%,
-    #6e6e6e 52%,
-    #767676 100%
-  );
+  background:
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #7e7e7e),
+      color-stop(50%, #797979),
+      color-stop(52%, #6e6e6e),
+      color-stop(100%, #767676)
+    );
+  background:
+    linear-gradient(
+      to bottom,
+      #7e7e7e 0%,
+      #797979 50%,
+      #6e6e6e 52%,
+      #767676 100%
+    );
   border-radius: 50px;
   border: none;
   border-bottom: 1px solid #858585;
-  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 1);
   height: 19px;
   width: 106px;
 }
@@ -492,7 +466,6 @@ table {
   height: 27px;
   font-weight: 200;
   padding-right: 6px;
-
 }
 
 .page-footer .piped li {
@@ -521,8 +494,6 @@ table {
   z-index: 1;
   width: 16px;
   height: 12px;
-  zoom: 1;
-
 }
 
 .page-footer .piped .country-logo img {
@@ -530,7 +501,6 @@ table {
   z-index: 1;
   top: -2px;
   left: 7px;
-
 }
 
 .clear {
