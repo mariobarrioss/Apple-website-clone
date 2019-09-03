@@ -188,6 +188,30 @@ table {
   width: 106px;
 }
 
+.promotions ul li {
+  position: relative;
+  height: 200px;
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.page-footer ul li {
+  display: inline;
+  margin: 0;
+}
+
+.page-footer .piped li {
+  display: inline-block;
+  float: none;
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  border-left: 1px solid #ccc;
+}
+
 .nav-header li:hover {
   background: rgba(0, 0, 0, 0.3);
   border-right: 1px solid transparent;
@@ -220,15 +244,29 @@ table {
   text-decoration: none;
 }
 
-.nav-header span {
+.nav-header .apple-logo {
+  background: url(Images/apple-logos.png) 50% 0 no-repeat;
   align-self: center;
   justify-self: center;
   align-items: center;
   color: #fff;
   font-size: 12px;
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin: 3px auto;
+}
+
+.nav-header span {
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
   display: flex;
-  height: 100%;
-  margin: auto;
+  height: 30px;
+  width: 100%;
+  margin: 3px auto;
 }
 
 .nav-header .search-box {
@@ -361,17 +399,6 @@ table {
   z-index: 1;
 }
 
-.promotions ul li {
-  position: relative;
-  height: 200px;
-  width: 25%;
-  float: left;
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
-  z-index: 1;
-}
-
 .promotions ul li a {
   position: absolute;
   z-index: 1;
@@ -442,13 +469,9 @@ table {
 }
 
 .page-footer p,
-.page-footer ul,
-.page-footer ul li {
+.page-footer ul {
   display: inline;
   margin: 0;
-  font-weight: 200;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-  color: #6e6e6e;
 }
 
 .footer-links {
@@ -456,6 +479,7 @@ table {
   font-size: 9.5px;
   font-weight: 200;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  text-decoration: none;
 }
 
 .page-footer .right {
@@ -465,15 +489,7 @@ table {
   text-align: right;
   height: 27px;
   font-weight: 200;
-  padding-right: 6px;
-}
-
-.page-footer .piped li {
-  display: inline-block;
-  float: none;
-  margin-left: 0.6em;
-  padding-left: 0.6em;
-  border-left: 1px solid #ccc;
+  padding-right: 8px;
 }
 
 .page-footer .piped li.first-item {
